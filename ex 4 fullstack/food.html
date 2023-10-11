@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Foodie Delights</title>
+<style>
+ /* Reset default margin and padding */
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ body {
+ font-family: Arial, sans-serif;
+ background-image:
+url('https://tse2.mm.bing.net/th?id=OIP.AVlHc8zTPGxaiZlva1pBvQHaFj&pid=Api&P=0&h=180');
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ margin: 0;
+ padding: 0;
+ }
+ header {
+ background-color: #ff9900;
+ color: #fff;
+ text-align: center;
+ padding: 20px 0;
+ }
+ h1 {
+ font-size: 36px;
+ font-weight: bold;
+ }
+ nav {
+ background-color: #444;
+ color: #fff;
+ text-align: center;
+ padding: 10px 0;
+ }
+ nav a {
+ text-decoration: none;
+ color: #ff9900;
+ margin: 10px;
+ font-size: 18px;
+ }
+ .container {
+ max-width: 960px;
+ margin: 20px auto; 
+ padding: 20px;
+ background-color: rgba(255, 255, 255, 0.9);
+ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+ border-radius: 10px;
+ }
+ h2 {
+ text-align: center;
+ background-color: #ff9900;
+ color: #fff;
+ padding: 10px;
+ border: 2px solid #ff6600;
+ font-size: 24px;
+ }
+ .menu-list {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ }
+ .menu-item {
+ width: calc(33.33% - 20px); /* Three items per row with some spacing */
+ border: 1px solid #ddd;
+ padding: 20px;
+ margin-bottom: 20px;
+ background-color: #fff;
+ text-align: center;
+ box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+ border-radius: 10px;
+ transition: transform 0.3s ease-in-out;
+ }
+ .menu-item:hover {
+ transform: translateY(-5px);
+ }
+ .menu-item img {
+ max-width: 100px;
+ margin-bottom: 10px;
+ }
+ .menu-item h3 {
+ font-size: 24px;
+ margin: 10px 0;
+ }
+ .menu-item p {
+ margin: 5px 0;
+ color: #555;
+ }
+ .order-button {
+ background-color: #ff6600;
+ color: #fff;
+ padding: 10px 20px;
+ border: none;
+ border-radius: 5px;
+ text-decoration: none;
+ cursor: pointer;
+ font-size: 18px;
+ transition: background-color 0.3s ease-in-out;
+ }
+ .order-button:hover {
+ background-color: #ff3300;
+ }
+ </style>
+</head>
+<body>
+ <header>
+ <h1>RithuFoods</h1>
+ </header>
+ <nav>
+ <a href="#menu">Menu</a>
+ <a href="online food.html">Logout</a>
+ </nav>
+ <div id="menu" class="container">
+ <h2 style="text-align: center; background-color: #ff9900; color: #fff; padding: 10px; border:
+2px solid #ff6600;">Menu</h2>
+ <div class="menu-list">
+ <div class="menu-item non-veg">
+ <imgsrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVo-V61AY7JFiYQHYa40xi7irmjGzWmdlnXg&usqp=CAU" alt="Briyani">
+ <div class="menu-item-info">
+ <h3>Biryani</h3>
+ <p>Restaurant: Rainbow restaurant</p>
+ <p>Price: 150 Rs</p>
+ <button class="order-button" data-item="Biryani" data-price="150">Order
+Now</button>
+ </div>
+ </div>
+ <div class="menu-item veg">
+ <img src="https://hips.hearstapps.com/hmg-prod/images/turkey-burger-index-64873e8770b34.jpg?crop=0.6666666666666667xw:1xh;center,top&resize=1200:*" alt="Burger">
+ <div class="menu-item-info">
+ <h3>Burger</h3>
+ <p>Restaurant:QuicheCarnivalrestaurant
+</p>
+ <p>Price: 150 Rs</p>
+ <button class="order-button" data-item="Burger" data-price="150">Order
+Now</button>
+ </div>
+ </div>
+ <div class="menu-item non-veg">
+ <imgsrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGz1rgLOpWG03TjFGpTemnY0l8PHWbULuzVw&usqp=CAU" alt="noodles">
+ <div class="menu-item-info">
+ <h3>Noodles</h3>
+ <p>Restaurant: Chops and Hops restaurant</p>
+ <p>Price: 150 rs</p>
+ <button class="order-button" data-item="Noodles" data-price="150">OrderNow</button>
+ </div>
+ </div>
+ <div class="menu-item non-veg">
+ <img src="https://cdn.loveandlemons.com/wp-content/uploads/2023/02/vegetarian-pizza-500x500.jpg" alt="pizza">
+ <div class="menu-item-info">
+ <h3>Pizza</h3>
+ <p>Restaurant: Curry Kingdom restaurant</p>
+ <p>Price: 150 rs</p>
+ <button class="order-button" data-item="Pizza" data-price="150">OrderNow</button>
+ </div>
+ </div>
+ <div class="menu-item non-veg">
+ <img src="https://tse4.mm.bing.net/th?id=OIP.MgeOTTwenttNdtuppBn3HwHaHa&pid=Api&P=0&h=180" alt="milkshake">
+ <div class="menu-item-info">
+ <h3>Milkshake</h3>
+ <p>Restaurant: Yummy In The Tummy restaurant</p>
+ <p>Price: 150 rs</p>
+ <button class="order-button" data-item="Milkshake" data-price="150">Order
+Now</button>
+ </div>
+ </div>
+ <div class="menu-item veg">
+ <img src="https://encryptedtbn0.gstatic.com/images?q=tbn:ANd9GcQUYaFB_hEg6-2k0sbXYnECJIeGV1tN7vH2DA&usqp=CAU" alt="sandwich">
+ <div class="menu-item-info">
+ <h3>Sandwich</h3>
+ <p>Restaurant: Take It Cheesy restaurant</p>
+ <p>Price: 150 Rs</p>
+ <button class="order-button" data-item="sandwich" data-price="150">Order
+Now</button>
+ </div>
+ </div>
+ </div>
+ </div>
+<div class="container" id="my-orders">
+ <h2>My Orders</h2><br>
+ <ul id="order-list"></ul></br><br>
+ <label for="address">Address:</label>
+ <input type="text" id="address" placeholder="Enter your address"></br>
+ <br> <!-- Add a line break here -->
+ <label for="phone">Phone Number:</label>
+ <input type="tel" id="phone" placeholder="Enter your phone number">
+ <button id="place-order-button">Place Order</button></br>
+ </div>
+ <script>
+ ConstvegFilterButton = document.getElementById('veg-filter');
+ const nonVegFilterButton = document.getElementById('non-veg-filter');
+ const allItems = document.querySelectorAll('.menu-item');
+ const arr = [];
+ // Your existing filter and order button eventlisteners here
+ const orderButtons = document.querySelectorAll('.order-button');
+ const orderList = document.getElementById('order-list');
+ const placeOrderButton = document.getElementById('place-order-button');
+ const addressInput = document.getElementById('address');
+ const phoneInput = document.getElementById('phone');
+ const totalAmountDisplay = document.getElementById('total-amount');
+ const orderItems = {}; // Store ordered items and their quantities
+ orderButtons.forEach(button => {
+ button.addEventListener('click', () => {
+ const itemName = button.getAttribute('data-item');
+ const itemPrice = parseFloat(button.getAttribute('data-price'));
+ if (orderItems[itemName]) {
+ // If the item is already in the list, increase the quantity and update the price
+ orderItems[itemName].quantity += 1;
+ orderItems[itemName].totalPrice += itemPrice;
+ } else {
+ // If it's a new item, create an entry in the orderItems object
+ orderItems[itemName] = {
+ quantity: 1,
+ totalPrice: itemPrice,
+ };
+ }
+ // Update the order list
+ renderOrderList();
+ totalAmount = calculateTotalAmount();
+ totalAmountDisplay.textContent = 'Total Amount: $' + totalAmount.toFixed(2);
+ // Add the order to the activity list
+ updateMyActivity(itemName, itemPrice);
+ });
+ });
+ placeOrderButton.addEventListener('click', () => {
+ const address = addressInput.value;
+ const phone = phoneInput.value;
+ if (address.trim() !== '') {
+ const orderSummary = Object.keys(orderItems).map(itemName => {
+ const item = orderItems[itemName];
+ return `${itemName} (Quantity: ${item.quantity}) - Total Price:
+$${item.totalPrice.toFixed(2)}`;
+ });
+ alert(`Order placed successfully!\nAddress: ${address}\nPhone:
+${phone}\n\n${orderSummary.join('\n')}`);
+ // Clear order data
+ orderList.innerHTML = '';
+ addressInput.value = '';
+ phoneInput.value = '';
+ totalAmount = 0;
+ totalAmountDisplay.textContent = 'Total Amount: $0.00';
+ orderItems = {};
+ // Reset the activity list
+ resetMyActivity();
+ } else {
+ alert('Please enter your address before placing the order.');
+ }
+ });
+ function renderOrderList() {
+ orderList.innerHTML = '';
+ for (const itemName in orderItems) {
+ const item = orderItems[itemName];
+ const listItem = document.createElement('li');
+ listItem.textContent = `${itemName} (Quantity: ${item.quantity}) - Total Price:
+$${item.totalPrice.toFixed(2)}`;
+ orderList.appendChild(listItem);
+ }
+ }
+ function calculateTotalAmount() {
+ let total = 0;
+ for (const itemName in orderItems) {
+ total += orderItems[itemName].totalPrice;
+ }
+ return total;
+ }
+ function updateMyActivity(orderName, orderPrice) {
+ // Your code to update activity list here
+ }
+ function resetMyActivity() {
+ // Your code to reset activity list here
+ }
+ </script>
+</body>
+</html>
